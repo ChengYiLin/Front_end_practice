@@ -1,0 +1,27 @@
+.product{
+	width: 200px;
+	height: 200px;
+	border: 2px solid red;
+	position: relative;
+	overflow: hidden;
+}
+
+.product:hover .title{
+	bottom: 0;
+}
+
+img{
+	margin-left: 30px;
+}
+
+.title{
+	transition: all 1s;
+	background: black;
+	color: white;
+	width: 200px;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	bottom: -30px;
+}
+
