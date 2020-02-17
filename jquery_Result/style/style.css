@@ -1,0 +1,479 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ------------------------------------- */
+
+body {
+    font-family: Microsoft JhengHei;
+}
+
+
+/* top bar */
+
+.top_bar {
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.social_media {
+    float: right;
+}
+
+.social_media li {
+    float: left;
+    padding: 0 10px;
+}
+
+.social_media li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: lightslategrey;
+}
+
+.fb {
+    border-right: rgb(185, 184, 184) 2px solid;
+}
+
+.fb:hover a {
+    color: #4267B2;
+    font-weight: bold;
+}
+
+.twitter:hover a {
+    color: #1DA1F2;
+    font-weight: bold;
+}
+
+
+/* menu */
+
+.top_menu {
+    margin: 0 50px;
+}
+
+.logo {
+    background-image: url('../images/logo.png');
+    display: inline-block;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav {
+    float: right;
+}
+
+.nav>li {
+    float: left;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.nav li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(86, 206, 148);
+    text-decoration: none;
+    line-height: 47px;
+}
+
+.nav li:hover {
+    border-bottom: rgb(71, 175, 125) 3px solid;
+}
+
+.nav li:hover a {
+    color: rgb(71, 175, 125);
+    font-weight: bolder;
+}
+
+.drop_down_menu i {
+    margin: 0 5px;
+}
+
+.drop_down {
+    position: absolute;
+    z-index: 999;
+    margin-top: 3px;
+    display: none;
+}
+
+.drop_down li {
+    border-bottom: 1px solid grey;
+    background: rgb(255, 252, 252);
+    text-align: center;
+}
+
+.drop_down li a {
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+
+/* banner */
+
+.swiper-container {
+    height: 70vh;
+}
+
+.swiper-wrapper .swiper-slide {
+    /* background-position: center; */
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide1 {
+    background-image: url(../images/swiper_1.png);
+}
+
+.slide2 {
+    background-image: url(../images/swiper_2.png);
+}
+
+.slide3 {
+    background-image: url(../images/swiper_3.png);
+}
+
+
+/* class list */
+
+.class_list {
+    max-width: 1024px;
+    margin: 30px auto;
+}
+
+.class_list>ul>li {
+    width: 280px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px grey;
+    float: left;
+}
+
+.class_list .class_img {
+    height: 140px;
+}
+
+.class_img img {
+    margin: 0 auto;
+}
+
+.class_img {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 140px;
+}
+
+.img_html {
+    background-image: url('../images/html.png');
+}
+
+.img_rwd {
+    background-image: url('../images/rwd.png')
+}
+
+.img_jq {
+    background-image: url('../images/jQuery.png')
+}
+
+.class_list h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.class_list p {
+    line-height: 20px;
+}
+
+.jq_li {
+    list-style: disc;
+    padding: 8px 20px;
+}
+
+
+/* comparsion chart */
+
+.comparsion_chart h3 {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.comparsion_chart table {
+    width: 800px;
+    margin: 30px auto;
+}
+
+.comparsion_chart th {
+    background: #f7f7f7;
+    font-weight: bolder;
+    padding: 10px 0;
+    border-top: 1px solid #dddd;
+    border-bottom: 1px solid #dddd;
+}
+
+.comparsion_chart td {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #dddd;
+}
+
+.comparsion_chart .highlight {
+    color: rgb(86, 206, 148);
+}
+
+
+/* form */
+
+.class_form {
+    width: 800px;
+    margin: 40px auto;
+    padding: 30px 0;
+    background: -webkit-linear-gradient(#00654b, #009772);
+}
+
+.form_title {
+    font-size: 24px;
+    color: white;
+    line-height: 32px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.class_form form {
+    padding: 20px 0;
+}
+
+.class_form textarea {
+    width: 45%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    margin: 0 2.5%;
+}
+
+.class_form .form_right {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+.form_content {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.form_content input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+}
+
+.form_content .button {
+    width: 20%;
+    border: none;
+    color: white;
+    background: #00cc99;
+    font-size: 18px;
+    font-weight: bolder;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    float: right;
+}
+
+.form_content .button:hover {
+    background: #01b185;
+}
+
+
+/* footer */
+
+footer {
+    padding: 30px 50px;
+}
+
+.footer_logo {
+    background-image: url('../images/footerLogo.png');
+    width: 171px;
+    height: 36px;
+}
+
+.hex_info {
+    float: right;
+}
+
+.hex_info p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.hex_info span {
+    color: rgb(250, 78, 78);
+    font-weight: bolder;
+}
+
+
+/* to_top */
+
+.to_top {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+.to_top i.fas {
+    font-size: 36px;
+    color: #00cc99;
+}
+
+.to_top i.fas:hover {
+    color: #02b185;
+}
