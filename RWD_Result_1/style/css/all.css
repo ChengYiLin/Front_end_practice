@@ -1,0 +1,708 @@
+/* CSS Reset Start */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Microsoft JhengHei;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* CSS Reset End */
+
+
+/* Whole vector Start */
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Whole vector End */
+
+
+/* header Start */
+
+header {
+    background: rgba(0, 0, 0);
+    position: relative;
+}
+
+.top_bar h1 {
+    float: left;
+    padding: 18px;
+}
+
+.top_bar h1 a {
+    width: 120px;
+    height: 24px;
+    background-image: url(../../images/logo/logo_header.svg);
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 20px;
+}
+
+nav a:hover {
+    color: #e8aa1f;
+}
+
+.menu li {
+    float: left;
+    padding: 0 5px;
+}
+
+nav .mb_nav_button {
+    display: none;
+}
+
+@media (max-width:768px) {
+    nav .mb_nav_button {
+        display: block;
+    }
+    nav .menu {
+        background: rgba(0, 0, 0, 0.8);
+        /* 選單隱藏 */
+        max-height: 0px;
+        overflow: hidden;
+        /* 定位 */
+        position: absolute;
+        z-index: 999;
+        top: 60px;
+        left: 0;
+        right: 0;
+        /* 動畫 */
+        transition: all ease 1s;
+    }
+    nav .menu.active {
+        max-height: 300px;
+    }
+    nav .menu li {
+        float: none;
+        border-top: 2px solid rgb(63, 63, 63);
+    }
+    nav .menu li a {
+        text-align: right;
+    }
+}
+
+.banner {
+    height: 400px;
+    background-image: url(../../images/banner/header_desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:768px) {
+    .banner {
+        background-image: url(../../images/banner/header_mobile.png);
+    }
+}
+
+.banner_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(46, 46, 46, 0.7);
+    padding: 20px;
+}
+
+.banner_text h2 {
+    font-size: 36px;
+    padding: .5em 0;
+}
+
+.banner_text p {
+    padding: .5em;
+}
+
+.banner_text i {
+    padding: 0 10px;
+    color: #e8aa1f;
+}
+
+@media (max-width:768px) {
+    .banner_text {
+        width: 80%;
+    }
+    .banner_text h2 {
+        font-size: 32px;
+    }
+    .banner_text span {
+        display: block;
+    }
+}
+
+
+/* header End */
+
+
+/* index:secrete Start */
+
+.secrete {
+    padding: 40px 0;
+    background: #EFE9E7;
+}
+
+.secrete h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3D1101;
+    text-align: center;
+    line-height: 32px;
+}
+
+.secrete ul {
+    padding: 30px 0;
+}
+
+.secrete li {
+    float: left;
+    width: 30%;
+    padding: 0 1.66666%;
+}
+
+.secrete .img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: black;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secrete .img.img_fresh {
+    background-image: url(../../images/index_secrete/fresh_pc.png);
+}
+
+.secrete .img.img_chef {
+    background-image: url(../../images/index_secrete/chef_pc.png);
+}
+
+.secrete .img.img_pro {
+    background-image: url(../../images/index_secrete/pro_pc.png);
+}
+
+.secrete h4 {
+    font-size: 20px;
+    color: #3D1101;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width:768px) {
+    .secrete li {
+        float: none;
+        width: 80%;
+        padding: 20px 10%;
+    }
+    .secrete .img.img_fresh {
+        background-image: url(../../images/index_secrete/fresh_mb.png);
+    }
+    .secrete .img.img_chef {
+        background-image: url(../../images/index_secrete/chef_mb.png);
+    }
+    .secrete .img.img_pro {
+        background-image: url(../../images/index_secrete/pro_mb.png);
+    }
+    .secrete p {
+        text-align: center;
+    }
+}
+
+
+/* index:secrete End */
+
+
+/* index:chef Start */
+
+.chef {
+    background: #3D1101;
+}
+
+.chef .content {
+    position: relative;
+}
+
+.chef .img_todaychef {
+    float: left;
+    width: 50%;
+    background-image: url(../../images/today_chef/main_chef_brown.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.chef .text_todatchef {
+    float: right;
+    padding: 50px 5%;
+    width: 40%;
+    color: whitesmoke;
+}
+
+.chef .text_todatchef h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.chef .text_todatchef h3 .eng {
+    font-size: 16px;
+    font-weight: none;
+}
+
+.chef .text_todatchef p {
+    line-height: 20px;
+}
+
+@media (max-width:568px) {
+    .chef .img_todaychef {
+        float: none;
+        width: 100%;
+        height: 306.6666px;
+        background-image: url(../../images/today_chef/main_chef_brown@2x.png);
+        background-size: contain;
+        position: relative;
+    }
+    .chef .text_todatchef {
+        float: none;
+        padding: 50px 10%;
+        width: 80%;
+        color: whitesmoke;
+    }
+    .chef .text_todatchef h3 {
+        text-align: center;
+    }
+}
+
+
+/* index:chef End */
+
+
+/* index:comment Start */
+
+.comment {
+    background: #EFE9E7;
+    padding: 50px 0 80px;
+}
+
+.comment h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3D1101;
+    text-align: center;
+    padding: 2em;
+}
+
+.comment li {
+    float: left;
+    width: 30%;
+    padding: 0 1.66666%;
+}
+
+.comment .account .image {
+    float: left;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    background: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.comment .account .image.avatar_1 {
+    background-image: url(../../images/comment/avatar_1@2x.png);
+}
+
+.comment .account .image.avatar_2 {
+    background-image: url(../../images/comment/avatar_2@2x.png);
+}
+
+.comment .account .image.avatar_3 {
+    background-image: url(../../images/comment/avatar_3@2x.png);
+}
+
+.comment .account .name {
+    float: left;
+    font-size: 20px;
+    line-height: 66px;
+}
+
+.comment .text {
+    margin-left: 66px;
+}
+
+.comment .role p {
+    padding: .5em 0;
+    text-align: right;
+}
+
+@media (max-width:768px) {
+    .comment li {
+        float: none;
+        width: 90%;
+        padding: 30px 5%;
+    }
+}
+
+
+/* index:comment End */
+
+
+/* booking Start */
+
+.booking {
+    background: rgb(250, 250, 250);
+    padding: 50px 0 80px;
+}
+
+.booking h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3D1101;
+    text-align: center;
+    line-height: 32px;
+    padding: 1em;
+}
+
+.booking .content .map {
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+}
+
+.booking .content form {
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0.2em;
+}
+
+form input,
+form select {
+    padding: 0.3em 0.4em;
+    margin-bottom: 1em;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 3px #ddd;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 9px;
+}
+
+form input:focus,
+form select:focus {
+    outline: 0;
+    border-color: #129FEA;
+}
+
+form select {
+    width: 25%;
+}
+
+form button {
+    float: right;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.3em .6em;
+    color: #444;
+    /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80);
+    /* rgba supported */
+    border: 1px solid #999;
+    /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);
+    /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+form button.submit {
+    background: rgb(245, 108, 35);
+    margin-left: 10px;
+}
+
+form button:hover,
+form button:focus {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+}
+
+form button:active {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
+    border-color: #000;
+}
+
+@media (max-width:768px) {
+    .booking .content .map {
+        float: none;
+        width: 80%;
+        padding: 0 10%;
+        margin-bottom: 50px;
+    }
+    .booking .content form {
+        float: none;
+        width: 80%;
+        padding: 0 10%;
+    }
+}
+
+
+/* booking End */
+
+
+/* footer Start */
+
+footer {
+    padding: 30px;
+    background: #EFE9E7;
+}
+
+.footer_list>li {
+    /* x6=15% */
+    padding: 0 2.5%;
+    /* x2=50% */
+    width: 25%;
+    float: left;
+}
+
+.footer_list h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: .4em 0;
+}
+
+.footer_list .contact li {
+    padding-bottom: .5em;
+}
+
+.footer_list .social_media {
+    width: 35%;
+}
+
+.footer_list .social_media .footer_logo {
+    width: 180px;
+    height: 36px;
+    margin: 0 0 0 auto;
+    background-image: url(../../images/logo/logo_footer.svg);
+}
+
+.footer_list .social_media li {
+    float: right;
+    padding: 15px 5px;
+}
+
+.footer_list .social_media a {
+    display: block;
+}
+
+.footer_list .social_media img {
+    width: 44px;
+    height: auto;
+}
+
+@media (max-width:768px) {
+    .footer_list>li {
+        padding: 2% 2.5%;
+        width: 95% !important;
+        float: none;
+    }
+    .footer_list .social_media li {
+        float: right;
+    }
+    .footer_list .social_media .footer_logo {
+        margin: 0 0 0 auto;
+    }
+}
+
+
+/* footer End */
+
+
+/* login Start */
+
+.login {
+    background: #EFE9E7;
+    padding: 50px 0;
+}
+
+
+/* login End */
