@@ -541,7 +541,7 @@ nav .mb_nav_button {
     padding: 0 5%;
 }
 
-form label {
+.booking form label {
     display: block;
     font-size: 18px;
     margin-bottom: 0.2em;
@@ -569,7 +569,7 @@ form select:focus {
     border-color: #129FEA;
 }
 
-form select {
+.booking form select {
     width: 25%;
 }
 
@@ -593,19 +593,19 @@ form button {
     cursor: pointer;
 }
 
-form button.submit {
+.booking form button.submit {
     background: rgb(245, 108, 35);
     margin-left: 10px;
 }
 
-form button:hover,
-form button:focus {
+.booking form button:hover,
+.booking form button:focus {
     background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.10)));
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
 }
 
-form button:active {
+.booking form button:active {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
     border-color: #000;
@@ -697,12 +697,145 @@ footer {
 /* footer End */
 
 
-/* login Start */
+/* login & register Start */
 
-.login {
+.login,
+.register {
     background: #EFE9E7;
     padding: 50px 0;
 }
 
+.login .logo,
+.register .logo {
+    width: 180px;
+    height: 36px;
+    margin: 1em auto;
+    background-image: url(../../images/logo/logo_footer.svg);
+}
 
-/* login End */
+.login .logo_text,
+.register .logo_text {
+    color: #3D1101;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* login : login box  */
+
+.login .login_box {
+    width: 280px;
+    height: auto;
+    padding: 40px 0;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 230, 230);
+    border-top: 5px solid #e8aa1f;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.login_box form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.login_box form label,
+.register_box form label {
+    color: #3D1101;
+    display: block;
+    padding: 5px 0;
+}
+
+.login_box form .input_content,
+.register_box form .input_content {
+    position: relative;
+}
+
+.login_box form i,
+.register_box form i {
+    position: absolute;
+    left: 10px;
+    top: .5em;
+}
+
+.login_box form input,
+.register_box form input {
+    text-indent: 28px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.login_box form .buttons .btn_register {
+    display: block;
+    float: left;
+    width: 35%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #444;
+    background: #a2b6ec;
+    padding: 0.3em .6em;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.login_box form .buttons .btn_login {
+    float: right;
+    width: 45%;
+    background: orange;
+}
+
+
+/* register : register box */
+
+.register .register_box {
+    width: 500px;
+    height: auto;
+    padding: 40px 0;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 230, 230);
+    border-top: 5px solid #e8aa1f;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.register .register_box .document {
+    float: left;
+    width: 45%;
+    padding: 0 2.5%;
+}
+
+.register .register_box .document .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.register .register_box form {
+    float: right;
+    width: 45%;
+    padding: 0 2.5%;
+}
+
+.register .register_box .btn_register {
+    background: orange;
+}
+
+@media (max-width:768px) {
+    .register .register_box {
+        width: 90%;
+    }
+    .register .register_box .document {
+        float: none;
+        width: 80%;
+        padding: 40px 10%;
+    }
+    .register .register_box form {
+        float: none;
+        width: 80%;
+        padding: 0 10%;
+    }
+}
+
+
+/* login & register End */
