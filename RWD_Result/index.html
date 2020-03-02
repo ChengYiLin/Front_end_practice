@@ -25,16 +25,16 @@
             <h1><a href="./index.html">六角西餐廳</a></h1>
 
             <nav>
-                <a href="#" class="mb_nav_button">Menu</a>
+                <a href="#" class="mb_nav_button"><i class="fas fa-bars"></i></a>
                 <ul class="clearfix menu">
                     <li>
-                        <a href="#">特色</a>
+                        <a href="#" id="bt_secrete">特色</a>
                     </li>
                     <li>
-                        <a href="#">地圖</a>
+                        <a href="#" id="bt_chef">主廚</a>
                     </li>
                     <li>
-                        <a href="#">主廚</a>
+                        <a href="#" id="bt_map">地圖</a>
                     </li>
                     <li>
                         <a href="./order.html">訂購</a>
@@ -56,7 +56,7 @@
     </header>
 
     <div class="secrete">
-        <h3>
+        <h3 id="secrete">
             客人總是在詢問<br>這麼好吃的秘訣是什麼
         </h3>
         <ul class="container clearfix">
@@ -79,7 +79,7 @@
 
     </div>
 
-    <div class="chef">
+    <div class="chef" id="chef">
         <div class="content container clearfix">
             <div class="img_todaychef"></div>
             <div class="text_todatchef">
@@ -137,7 +137,7 @@
     </div>
 
     <div class="booking">
-        <h3>
+        <h3 id="map">
             我們位置不太夠<br>你要不要先定位呢？
         </h3>
         <div class="content clearfix">
@@ -202,7 +202,9 @@
         </ul>
     </footer>
 
-
+    <a href="#" class="to_top" style="display: none; z-index:9999">
+        <i class="fas fa-caret-square-up"></i>
+    </a>
 </body>
 
 </html>
