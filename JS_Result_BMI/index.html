@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 計算</title>
+    <link rel="stylesheet" href="./style/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <div class="logo">
+                <img src="./img/BMICLogo.png" alt="Logo">
+            </div>
+            <div class="form_box">
+                <form>
+                    <div class="form-group">
+                        <label for="height" class="text-warning">身高 cm</label>
+                        <input type="text" class="form-control mt-2" id="height" placeholder="請輸入身高">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight" class="text-warning">體重 kg</label>
+                        <input type="text" class="form-control mt-2" id="weight" placeholder="請輸入體重">
+                    </div>
+                </form>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="main_btn">
+                    <p class="result">看結果</p>
+                    <small>BMI</small>
+                    <a href="#" class="restart_btn">
+                        <img src="./img/icons_loop.png" alt="restart">
+                    </a>
+                </a>
+                <p class="state"></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-3">
+        <h1 class="text-center pb-3 h2">BMI 紀錄</h1>
+        <div class="container">
+            <ul class="record_list"></ul>
+        </div>
+        <div class="clean_his d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-secondary" id="clear">Clean History</button>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./img/BMICLogo.png" alt="footer_Logo" class="footer_logo d-block">
+    </footer>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

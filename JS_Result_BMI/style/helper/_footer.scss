@@ -1,0 +1,20 @@
+// Using flex to make sticky footer
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+
+// footer
+footer{
+    background: #FFD366;
+    padding: 1rem 0;
+    .footer_logo{
+        width: 55px;
+        margin: 0 auto;
+        filter: grayscale(1) invert(1);;
+    }
+}

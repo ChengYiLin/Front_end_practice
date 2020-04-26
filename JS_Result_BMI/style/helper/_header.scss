@@ -1,0 +1,76 @@
+@mixin align_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// header
+header{
+    background: #424242;
+    padding: 5rem;
+    .header_container{
+        max-width: 1024px;
+        margin: 0 auto;
+        @include align_center();
+        .form_box{
+            margin: 0 3rem;
+        }
+        .btn-box{
+            position: relative;
+            @include align_center();
+            .main_btn{  
+                width: 120px;
+                height: 120px;
+                font-size: 24px;
+                border-radius: 50%;
+                background: #FFD366;
+                @include align_center();
+                flex-direction: column;
+                &:hover{
+                    box-shadow: 0 0 0 0.2rem rgba(255,211,102, .7);
+                }
+                &:active{
+                    background: rgb(168, 168, 168);
+                }
+                small{
+                    display: none;
+                }
+            }
+            .restart_btn{
+                opacity: 0;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #86D73E;
+                position: absolute;
+                top: 80px;
+                left: 90px;
+                @include align_center();   
+            }
+            .state{
+                margin-left: 1rem;
+                font-size: 32px;
+            }
+            .active{
+                background: transparent;
+                color: #86D73E;
+                font-weight: bolder;
+                border: 6px solid #86D73E;
+                &:hover{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    header{
+        padding: 3rem;
+        .header_container{
+            flex-direction: column;
+            .form_box{
+                margin: 3rem 0;
+            }
+        }  
+    }
+}

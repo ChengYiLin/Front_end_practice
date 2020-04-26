@@ -1,0 +1,84 @@
+main{
+    background: #e8e8e8;
+}
+
+.record_list{
+    width: 80%;
+    margin: 0 auto;
+    li{
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        padding: 1.5rem 0;
+        margin: 1rem 0;
+        background: white;
+        border-radius: 5px;
+        span{
+            font-size: 20px;
+        }
+        .main_item{
+            flex-grow: 1;
+        }
+        .status{
+            padding-left: 1rem;
+            flex-basis: 85px; 
+        }
+        .data{
+            flex-grow: 5;
+            display: flex;
+            justify-content: space-around;
+        }
+        .record_date{
+            display: flex;
+            justify-content: center;
+        }
+        .delete_btn{
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #e8e8e8;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 3px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .record_list{
+        width: 100%;
+        li{
+            flex-wrap: wrap;
+            .status{
+                order: -2;
+                padding-bottom: 1rem;
+            }
+            .record_date{
+                order: -1;
+            }
+        }
+    }
+}
+
+.border_color_0{
+    border-left: 7px solid #31BAF9;
+}
+
+.border_color_1{
+    border-left: 7px solid #86D73F;
+}
+
+.border_color_2{
+    border-left: 7px solid #FF982D;
+}
+
+.border_color_3{
+    border-left: 7px solid #FF6C02;
+}
+
+.border_color_4{
+    border-left: 7px solid #FF1200;
+}

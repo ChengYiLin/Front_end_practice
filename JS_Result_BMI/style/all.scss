@@ -1,0 +1,33 @@
+// Reset
+@import './helper/reset';
+
+// Boostrap
+@import "../node_modules/bootstrap/scss/functions";
+@import './helper/variables';
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/forms';
+
+// header
+@import './helper/header';
+
+// main
+@import './helper/main';
+
+@import './helper/footer';
+
+.box{
+    width: 100%;
+    height: 100px;
+    background: skyblue;
+}
+
+.box2{
+    width: 100%;
+    height: 100px;
+    background: rgb(84, 255, 41);
+}
