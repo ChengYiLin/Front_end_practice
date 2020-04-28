@@ -111,5 +111,5 @@ function hot_region_quick_link(e) {
 
     add_travel_site(e.target.innerText, site_inform, 0);
     // build page num
-    build_page_num(site_inform); s
+    build_page_num(site_inform);
 }
