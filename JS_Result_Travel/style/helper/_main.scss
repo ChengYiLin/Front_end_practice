@@ -44,17 +44,17 @@
     }
     .inform{
         .opentime{
-            @include box_inform("../../img/block/icons_clock.png")
+            @include box_inform("../img/block/icons_clock.png")
         }
         .add{
-            @include box_inform("../../img/block/icons_pin.png")
+            @include box_inform("../img/block/icons_pin.png")
         }
         .tel{
-            @include box_inform("../../img/block/icons_phone.png")
+            @include box_inform("../img/block/icons_phone.png")
         }
         
         .ticket{
-            @include box_inform("../../img/block/icons_tag.png")
+            @include box_inform("ss../img/block/icons_tag.png")
         }
     }
 }

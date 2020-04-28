@@ -9005,7 +9005,7 @@ body {
 .banner {
   min-height: 480px;
   position: relative;
-  background-image: url("../../img/hero/hero.png");
+  background-image: url("../img/hero/hero.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9084,7 +9084,7 @@ body {
   height: 30px;
   border: 3px solid black;
   border-radius: 50%;
-  background-image: url("../../img/icons_down.png");
+  background-image: url("../img/icons_down.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9099,7 +9099,7 @@ body {
 @media (max-width: 576px) {
   .banner {
     min-height: 480px;
-    background-image: url(../../img/hero/hero_mb.png);
+    background-image: url("../img/hero/hero_mb.png");
   }
   .banner .hot {
     width: 90%;
@@ -9158,7 +9158,7 @@ body {
 }
 
 .site_box .inform .opentime::before {
-  content: url("../../img/block/icons_clock.png");
+  content: url("../img/block/icons_clock.png");
   position: absolute;
   top: 14px;
   left: -5px;
@@ -9170,7 +9170,7 @@ body {
 }
 
 .site_box .inform .add::before {
-  content: url("../../img/block/icons_pin.png");
+  content: url("../img/block/icons_pin.png");
   position: absolute;
   top: 14px;
   left: -5px;
@@ -9182,7 +9182,7 @@ body {
 }
 
 .site_box .inform .tel::before {
-  content: url("../../img/block/icons_phone.png");
+  content: url("../img/block/icons_phone.png");
   position: absolute;
   top: 14px;
   left: -5px;
@@ -9194,7 +9194,7 @@ body {
 }
 
 .site_box .inform .ticket::before {
-  content: url("../../img/block/icons_tag.png");
+  content: url("ss../img/block/icons_tag.png");
   position: absolute;
   top: 14px;
   left: -5px;
