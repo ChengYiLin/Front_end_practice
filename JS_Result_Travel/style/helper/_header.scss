@@ -1,0 +1,83 @@
+@mixin flex_to_center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin backgrond_image($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    background: rgb(230, 230, 230);
+}
+
+.banner{
+    min-height: 480px;
+    position: relative;
+    @include backgrond_image('../../img/hero/hero.png');
+    @include flex_to_center(column);
+    h1{
+        padding: 1rem 2rem;
+        margin-bottom: 3rem;
+        background: rgba(0,0,0,0.6);
+    }
+    .region{
+        font-size: 1.2rem;
+    }
+    .hot{
+        position: absolute;
+        bottom: -6rem;
+        width: 80%;
+        max-width: 1024px;
+        background: white;
+        .hot_region{
+            width: 80%;
+            margin: 0 auto;
+            @include flex_to_center(row);
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                margin: 1rem 0;
+                flex-basis: 120px;
+            }
+        }
+    }
+}
+.dashed_line{
+    width: 85%;
+    height: 5px;
+    margin: 8rem auto 0;
+    border-bottom: 2px dashed black;
+    position: relative;
+    &::after{
+        content: '';
+        width: 30px;
+        height: 30px;
+        border: 3px solid black;
+        border-radius: 50%;
+        @include backgrond_image('../../img/icons_down.png');
+        background-size: contain;
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px){
+    .banner{
+        min-height: 480px;
+        background-image: url(../../img/hero/hero_mb.png);      
+        .hot{
+            width: 90%;
+            h2{
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@mixin backgrond_image($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin box_inform($url) {
+    position: relative;
+    padding: 1rem 0 1rem 1rem;
+    &::before{
+        content: url($url);
+        position: absolute;
+        top: 14px;
+        left: -5px;
+    }
+}
+
+.travel_region_title{
+    text-align: center;
+}
+
+.travel_sites{
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site_box{
+    width: 40%;
+    margin: 1rem 0;
+    background: white;
+    .pic{
+        height: 180px;
+        padding: 0 1rem;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include backgrond_image("http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960");
+    }
+    .inform{
+        .opentime{
+            @include box_inform("../../img/block/icons_clock.png")
+        }
+        .add{
+            @include box_inform("../../img/block/icons_pin.png")
+        }
+        .tel{
+            @include box_inform("../../img/block/icons_phone.png")
+        }
+        
+        .ticket{
+            @include box_inform("../../img/block/icons_tag.png")
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .site_box{
+        width: 90%;
+        margin: 1rem auto;
+    }
+}

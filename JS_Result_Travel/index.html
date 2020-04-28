@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/all.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="banner">
+            <h1 class="h1 text-white rounded">高雄旅遊資訊</h1>
+            <!-- Select -->
+            <select class="region" id="region">
+                <option value="hide" hidden>-- 請選擇行政區 --</option>
+            </select>
+            <div class="hot py-3 rounded">
+                <h2 class="h4 px-5">熱門行政區</h2>
+                <div class="hot_region">
+                    <button type="button" class="btn btn-danger">苓雅區</button>
+                    <button type="button" class="btn btn-warning">三民區</button>
+                    <button type="button" class="btn btn-info">新興區</button>
+                    <button type="button" class="btn btn-primary">那瑪夏</button>
+                </div>
+            </div>
+        </div>
+        <div class="dashed_line"></div>
+    </header>
+
+    <main class="py-5">
+        <h3 class="travel_region_title">三民區</h3>
+        <div class="travel_sites"></div>
+        <nav>
+            <ul class="pagination justify-content-center">
+                <div class="page_num d-flex">
+                </div>
+            </ul>
+        </nav>
+        </div>
+    </main>
+
+    <footer class="text-center bg-info py-5">
+        <p class="text-white py-3">高雄旅遊網</p>
+        <p class="text-warning">資料來源：高雄市政府 </p>
+    </footer>
+
+    <script type="module" src="./js/all.js"></script>
+</body>
+
+</html>
