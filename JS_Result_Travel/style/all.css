@@ -9194,7 +9194,7 @@ body {
 }
 
 .site_box .inform .ticket::before {
-  content: url("ss../img/block/icons_tag.png");
+  content: url("../img/block/icons_tag.png");
   position: absolute;
   top: 14px;
   left: -5px;
