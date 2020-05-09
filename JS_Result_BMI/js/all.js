@@ -26,7 +26,7 @@ function check_BMI(BMI) {
 }
 
 function Get_today() {
-    var today = new Date();
+    let today = new Date();
     return today.toISOString().substring(0, 10);
 }
 
@@ -43,7 +43,7 @@ function build_li_content(data, i) {
 
 function update_data() {
     let new_data = JSON.parse(localStorage.getItem('stored_data'));
-    if (new_data == null) { return };
+    if (new_data === null) { return };
 
     let return_whole_li = '';
     // New to Old
@@ -92,7 +92,7 @@ function store_value(e) {
     let input_height = document.getElementById('height');
     let input_weight = document.getElementById('weight');
 
-    if (input_height.value == '' || input_weight.value == '') {
+    if (input_height.value === '' || input_weight.value === '') {
         alert("身高 及 體重 都必須填入數值");
         return;
     }
@@ -116,8 +116,6 @@ function clean_history() {
     localStorage.setItem('stored_data', null);
     whole_data = [];
     record_list.innerHTML = "";
-    // button reset
-    main_btn_reset();
 }
 
 function delete_li(e) {
