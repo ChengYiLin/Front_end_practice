@@ -9030,6 +9030,33 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.banner .Select {
+  max-width: 800px;
+  width: 60%;
+  position: relative;
+}
+
+.banner .Select select {
+  width: 100%;
+  padding: .5rem 0;
+  background: rgba(255, 255, 255, 0.6);
+  border: 3px solid white;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+.banner .Select .down_btn {
+  padding: .5rem;
+  background-image: url("../img/icons_down.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
 .banner .region {
   font-size: 1.2rem;
 }
@@ -9094,6 +9121,17 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.scroll_top {
+  padding: 1rem;
+  background-image: url("../img/btn_goTop.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 @media (max-width: 576px) {

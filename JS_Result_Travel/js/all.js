@@ -3,6 +3,7 @@ let hot_region = document.querySelector('.hot_region');
 let travel_region = document.querySelector('.travel_region_title');
 let travel_site = document.querySelector('.travel_sites');
 let pagination = document.querySelector('.pagination');
+let to_top_btn = document.querySelector('.scroll_top');
 
 let region = [];
 let whole_data = {};
@@ -10,9 +11,8 @@ let whole_data = {};
 get_remote_data(add_Select_region, add_travel_site, build_page_num);
 Select_region.addEventListener('change', change_content, true);
 pagination.addEventListener('click', change_page, true);
-hot_region.addEventListener('click', hot_region_quick_link, true)
-
-// Hot quick link
+hot_region.addEventListener('click', hot_region_quick_link, true);
+to_top_btn.addEventListener('click', scroll_to_top, true)
 
 // Request Data
 function get_remote_data(add_Select_region, add_travel_site, build_page_num) {
@@ -21,10 +21,10 @@ function get_remote_data(add_Select_region, add_travel_site, build_page_num) {
     xhr.send(null);
     xhr.onload = function () {
         let data = JSON.parse(xhr.responseText).result.records;
-        for (var i = 0; i < data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
             // Add region
             if (!region.includes(data[i].Zone)) {
-                region.push(data[i].Zone)
+                region.push(data[i].Zone);
                 whole_data[data[i].Zone] = [{ 'Name': data[i].Name, 'Picture': data[i].Picture1, 'Opentime': data[i].Opentime, 'Add': data[i].Add, 'Tel': data[i].Tel, 'Ticket': data[i].Ticketinfo }];
             }
             else {
@@ -112,4 +112,14 @@ function hot_region_quick_link(e) {
     add_travel_site(e.target.innerText, site_inform, 0);
     // build page num
     build_page_num(site_inform);
+}
+
+// Scroll to top
+function scroll_to_top(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 }

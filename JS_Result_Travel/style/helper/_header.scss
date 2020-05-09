@@ -26,6 +26,27 @@ body{
         margin-bottom: 3rem;
         background: rgba(0,0,0,0.6);
     }
+    .Select{
+        max-width: 800px;
+        width: 60%;
+        position: relative;
+        select{
+            width: 100%;
+            padding: .5rem 0;
+            background: rgba(255,255,255,0.6);
+            border: 3px solid white;
+            border-radius: 5px;
+            -webkit-appearance: none;
+        }
+        .down_btn{
+            padding: .5rem;
+            @include backgrond_image('../img/icons_down.png');
+            background-size: contain;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+        }
+    }
     .region{
         font-size: 1.2rem;
     }
@@ -67,6 +88,14 @@ body{
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.scroll_top{
+    padding: 1rem;
+    @include backgrond_image('../img/btn_goTop.png');
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 @media (max-width: 576px){
