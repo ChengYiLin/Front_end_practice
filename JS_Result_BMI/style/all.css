@@ -9552,15 +9552,7 @@ footer .footer_logo {
           filter: grayscale(1) invert(1);
 }
 
-.box {
-  width: 100%;
-  height: 100px;
-  background: skyblue;
-}
-
-.box2 {
-  width: 100%;
-  height: 100px;
-  background: #54ff29;
+#warn_msg {
+  color: red;
 }
 /*# sourceMappingURL=all.css.map */

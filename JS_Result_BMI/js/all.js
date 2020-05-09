@@ -3,6 +3,7 @@ let submit_btn = document.querySelector('.main_btn');
 let restart_btn = document.querySelector('.restart_btn');
 let record_list = document.querySelector('.record_list');
 let clean_btn = document.getElementById('clear');
+let main_title = document.querySelector('.main_title');
 
 function check_BMI(BMI) {
     if (BMI < 18.5) {
@@ -93,8 +94,21 @@ function store_value(e) {
     let input_weight = document.getElementById('weight');
 
     if (input_height.value === '' || input_weight.value === '') {
-        alert("身高 及 體重 都必須填入數值");
-        return;
+        if (document.getElementById("warn_msg") !== null) {
+            return;
+        }
+        else {
+            let warning_msg = document.createElement('p');
+            warning_msg.setAttribute("id", "warn_msg");
+            warning_msg.textContent = "You have Wrong input";
+            main_title.appendChild(warning_msg);
+            return;
+        }
+    }
+    else {
+        if (document.getElementById("warn_msg") !== null) {
+            warn_msg.remove();
+        };
     }
 
     let data_to_store = {
